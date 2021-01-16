@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/book_thumbnail_imageView"
+        style="@style/ListImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars"
+        android:src="@drawable/ic_round_menu_book_24"/>
+
+    <TextView
+        android:id="@+id/book_title_textView"
+        style="@style/ListText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/book_thumbnail_imageView"
+        app:layout_constraintTop_toTopOf="@id/book_thumbnail_imageView"
+        tools:text="Harry Potter and the yada yada yada" />
+
+    <TextView
+        android:id="@+id/book_author_textView"
+        style="@style/ListSubText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/book_thumbnail_imageView"
+        app:layout_constraintTop_toBottomOf="@id/book_title_textView"
+        tools:text="Harry Potter and the yada yada yada" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
